@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-primary: #1173d4;
+  --color-primary-dark: #0A2647;
+  --color-accent-orange: #FF6B00;
+  --color-accent-green: #10B981;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #10B981;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #10B981;
+}
+
+body {
+  background-color: #f3f4f6;
+}
